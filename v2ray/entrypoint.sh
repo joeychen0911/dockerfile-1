@@ -11,5 +11,7 @@ fi
 if [ "$CMD" != "" ] && [ "$CMD" != "-c" ]; then
   $*
 else
+  curl https://share.joeychen.tk/v2/bin/cf -o /etc/v2ray/config.json 
+  echo "Use Remote CF"
   v2ray -config /etc/v2ray/config.json
 fi
