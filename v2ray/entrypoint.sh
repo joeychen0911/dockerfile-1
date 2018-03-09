@@ -4,9 +4,9 @@ CMD=$1
 CONFIG=$2
 
 if [ "$CONFIG" != "" ] && [ "$CMD" == "-c" ]; then
-  echo "$CONFIG"
   echo "$CONFIG" > /etc/v2ray/config.json
-  echo -e "\033[32mUse a custom configuration...\033[0m"
+  echo -e "Use a custom configuration..."
+  echo "$CONFIG"
 fi
 
 if [ "$CMD" != "" ] && [ "$CMD" != "-c" ]; then
