@@ -12,7 +12,5 @@ fi
 if [ "$CMD" != "" ] && [ "$CMD" != "-c" ]; then
   $*
 else
-  curl https://raw.githubusercontent.com/v2ray/install/master/docker/official/config.json -o /etc/v2ray/config.json 
-  echo "Use Remote CF"
   v2ray -config /etc/v2ray/config.json
 fi
