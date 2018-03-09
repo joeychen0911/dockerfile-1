@@ -28,7 +28,6 @@ RUN apk upgrade --update \
     && mv /tmp/v2ray/v2ray-${V2RAY_VERSION}-linux-64/vpoint_vmess_freedom.json /etc/v2ray/config.json \
     && chmod +x /usr/local/bin/v2ray/v2ray \
     && chmod +x /usr/local/bin/v2ray/v2ctl \
-    && apk del curl \
     && rm -rf /tmp/v2ray /var/cache/apk/*
 
 ADD entrypoint.sh /entrypoint.sh
