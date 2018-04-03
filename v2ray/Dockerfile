@@ -4,7 +4,7 @@ LABEL maintainer="mritd <mritd1234@gmail.com>"
 
 ENV TZ 'Asia/Shanghai'
 
-ENV V2RAY_VERSION v3.13 
+ENV V2RAY_VERSION v3.15 
 
 RUN apk upgrade --update \
     && apk add \
