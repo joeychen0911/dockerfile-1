@@ -12,5 +12,5 @@ fi
 if [ "$CMD" != "" ] && [ "$CMD" != "-c" ]; then
   $*
 else
-  v2ray -config /etc/v2ray/config.json
+  joeyv -config /etc/v2ray/config.json
 fi
