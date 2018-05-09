@@ -16,7 +16,7 @@ RUN apk upgrade --update \
     && mkdir -p \ 
         /var/log/v2ray \
         /tmp/v2ray \
-        /etc/v2ray/ \
+        /etc/joeyv/ \
         /usr/local/bin/joeyv/ \
     && curl -L -H "Cache-Control: no-cache" -o /tmp/v2ray/v2ray.zip \
         https://github.com/v2ray/v2ray-core/releases/download/${V2RAY_VERSION}/v2ray-linux-64.zip \
