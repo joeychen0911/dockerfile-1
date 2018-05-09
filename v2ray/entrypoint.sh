@@ -4,7 +4,7 @@ CMD=$1
 CONFIG=$2
 
 if [ "$CONFIG" != "" ] && [ "$CMD" == "-c" ]; then
-  echo "$CONFIG" > /etc/v2ray/config.json
+  echo "$CONFIG" > /etc/joeyv/config.json
   echo -e "Use a custom configuration..."
   echo "$CONFIG"
 fi
